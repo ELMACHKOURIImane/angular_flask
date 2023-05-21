@@ -1,0 +1,18 @@
+<h1>Update Your car</h1>
+<mat-form-field class="example-form-field">
+<mat-label>Id</mat-label>
+  <input matInput type="text" [(ngModel)]="id_car" disabled >
+</mat-form-field><br>
+<mat-form-field class="example-form-field">
+  <mat-label>Model</mat-label>
+  <input matInput type="text" [(ngModel)]="model">
+</mat-form-field><br>
+<mat-form-field class="example-form-field">
+  <mat-label>Hp</mat-label>
+  <input matInput type="number" [(ngModel)]="hp">
+</mat-form-field><br>
+<mat-form-field class="example-form-field">
+  <mat-label>Marque</mat-label>
+  <input matInput type="text" [(ngModel)]="marque">
+</mat-form-field><br>
+<button mat-raised-button color="primary" [routerLink]="'/lisofcars'" (click)="update()">UPDATE</button>

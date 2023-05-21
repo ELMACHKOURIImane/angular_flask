@@ -1,0 +1,64 @@
+<h1 >Liste of cars</h1>
+<!-- <table>
+
+
+    <th>
+id
+    </th>
+    <th>
+       model
+    </th>
+    <th>
+        hp
+    </th>
+    <th>
+       marque
+    </th>
+
+
+<tr  *ngFor="let car of cars">
+    <td>{{car.id_car}}</td>
+    <td>{{car.model}}</td>
+    <td>{{car.hp}}</td>
+    <td>{{car.marque}}</td>
+    <td><button (click)="deleteCar(car.id_car)">DELETE</button></td>
+    <td><a routerLink="/update/{{car.id_car}}">UPDATE</a></td>
+</tr>
+
+</table> -->
+<table class="styled-table">
+  <thead>
+      <tr>
+        <th>
+          id
+              </th>
+              <th>
+                 model
+              </th>
+              <th>
+                  hp
+              </th>
+              <th>
+                 marque
+              </th>
+              <th>
+                DELETE
+             </th>
+             <th>
+               UPDATE
+           </th>
+
+      </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let car of cars">
+      <td>{{car.id_car}}</td>
+      <td>{{car.model}}</td>
+      <td>{{car.hp}}</td>
+      <td>{{car.marque}}</td>
+      <td><button (click)="deleteCar(car.id_car)"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete">DELETE</mat-icon></button></td>
+      <td><a routerLink="/update/{{car.id_car}}"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="border_color">UPDATE</mat-icon></a></td>
+  </tr>
+
+  </tbody>
+</table>
